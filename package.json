@@ -1,0 +1,25 @@
+{
+  "name": "react_project",
+  "version": "1.0.0",
+  "description": "A react with typescript framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "lite-server",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "lite-server": "^2.4.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1"
+  }
+}
