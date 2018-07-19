@@ -1,25 +1,44 @@
 {
   "name": "react_project",
   "version": "1.0.0",
-  "description": "A react with typescript framework",
+  "description": "rebuild react project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "lite-server",
-    "build": "webpack --mode production"
+    "test": "test",
+    "build": "webpack  --mode development",
+    "start": "webpack-dev-server  --mode development --inline --hot --open"
   },
-  "author": "",
-  "license": "Apache 2.0",
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonySheep/React_project.git"
   },
+  "author": "Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonySheep/React_project/issues"
+  },
+  "homepage": "https://github.com/JonySheep/React_project#readme",
   "devDependencies": {
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
-    "lite-server": "^2.4.0",
-    "ts-loader": "^4.4.2",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "style-loader": "^0.21.0",
     "typescript": "^2.9.2",
-    "webpack": "^4.16.1"
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.1.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
