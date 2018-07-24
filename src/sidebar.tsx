@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const className=require('./sidebar.css');
 
 interface Props{

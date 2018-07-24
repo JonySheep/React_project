@@ -12,7 +12,8 @@ module.exports = {
     },
     entry: [
         './main.tsx',
-        '../node_modules/bootstrap/dist/css/bootstrap.css'
+        '../node_modules/bootstrap/dist/css/bootstrap.css',
+        './content/site.css'
     ],
     output: {
         path: path.join(basePath, 'dist'),
@@ -55,6 +56,11 @@ module.exports = {
                         },
                      },
                 ]
+            },
+            {
+                test: /\.(png|jpg)$/,
+                exclude: /node_modules/,
+                loader: 'url-loader?limit=10000'
             },
 
             {
